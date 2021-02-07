@@ -380,36 +380,60 @@
                     </li>
                 </ul>
             </div>
+            <div class="email-send">
+                <h2 class="social-title-footer"> Подпишитесь на рассылку</h2>
+                <form class="footer-form">
+                        <input class="form-input" type="email" name="email" id="email" placeholder="Email">
+                        <button type="button" class="hero-button">Подписаться
+                            <svg width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-iconsend"></use>
+                            </svg>
+                        </button>
+                </form>
+            </div>
         </div>    
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal" >
-            <p>Оставьте свои данные, мы вам перезвоним</p>
-            <form>
+            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="hero-form">
                 <ul class="form-list">
                     <li class="form-list-item">
-                        <label for="name">Имя</label>
-                        <input type="text" name="name" id="name">
+                        <label class="form-label" for="name">Имя
+                            <svg class="form-icon" width="12px" height="12px">
+                                <use href="./images/symbol-defs.svg#icon-vector-name"></use>
+                            </svg>
+                            <input class="form-input" type="text" name="name" id="name">
+                        </label>
                     </li>
-                    <li>
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel">
+                    <li class="form-list-item">
+                        <label class="form-label" for="tel">Телефон
+                            <svg class="form-icon" width="13px" height="13px">
+                                <use href="./images/symbol-defs.svg#icon-vector-tel"></use>
+                            </svg>
+                            <input class="form-input" type="tel" name="tel" id="tel">
+                        </label>
                     </li>
-                    <li>
-                        <label for="email">Почта</label>
-                        <input type="email" name="email" id="email">
+                    <li class="form-list-item">
+                        <label class="form-label" for="email">Почта
+                            <svg class="form-icon" width="15px" height="12px">
+                                <use href="./images/symbol-defs.svg#icon-vector-email"></use>
+                            </svg>
+                            <input class="form-input" type="email" name="email" id="email">
+                        </label>
                     </li>
-                    <li>
-                        <label for="comments">Комментарий</label>
-                        <textarea id="comments" rows="6" placeholder="Введите текст"></textarea>
+                    <li class="form-list-item">
+                        <label for="comment">Комментарий</label>
+                        <textarea class="form-comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
                     </li>
-                    <li>
+                    <li class="form-list-item agree">
                         <input type="checkbox" id="checkbox" name="agree">
-                        <label for="agree">Соглащаюсь с расслыкой и принимаю</label>
-                        <a href="#">Условия договора</a>
+                        <label class="form-agree" for="agree">Соглащаюсь с расслыкой и принимаю
+                            <a class="form-link" href="#">Условия договора</a>
+                        </label>
                     </li>
                 </ul>
-                <button type="button">Отправить</button>
+                <button type="button" class="hero-button">Отправить</button>
             </form>
             <button data-modal-close class="button-close">
                 <div class="icon-close">
