@@ -786,7 +786,7 @@ a{
 }
 
 .modal{
-    position: absolute;
+    position: relative;
     padding: 40px;
     top: 50%;
     left: 50%;
@@ -822,6 +822,8 @@ a{
     fill: var(--black-color);
 }
 
+/* Оформление формы модального окна */
+
 .form-list-item{
     position: relative;
     display: flex;
@@ -833,8 +835,7 @@ a{
     color: var(--secondary-text-color)
 }
 .form-input{
-    margin-top: 4px;
-    padding: 14px 42px;
+    padding: 12px 42px;
     width: 100%;  
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -880,6 +881,7 @@ textarea{
     }
 
 .form-comment{
+    margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -891,12 +893,12 @@ textarea{
     border: 1px solid var(--accent-color);
 }
 
-.form-list-item .agree{
+.agree{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .form-agree{
@@ -913,10 +915,85 @@ textarea{
     text-decoration: underline;
 }
 
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Подпишитесь на рассылку */
+
 .email-send{
     margin-left: 93px;
 }
 
 .footer-form{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.footer-input{
+    display: flex;
+    align-items: center;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px; 
+    background-color: var(--main-background-color);
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+}
+
+.footer-input:hover,
+.footer-input:focus{
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.footer-button{
+    display: flex;
+    align-items: center;
+    padding: 10px 29px;
+    font-size: 16px;
+    line-height: 1.87;
+    width: 200px;
+    height: 50px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;  
+    text-transform: capitalize;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.email-icon-footer{
+    align-items: center;
+    margin-left: 10px;
+}
+
+
