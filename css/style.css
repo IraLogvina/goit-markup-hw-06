@@ -820,6 +820,11 @@ a{
     align-items: center;
     justify-content: center;
     fill: var(--black-color);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close:hover{
+    fill: var(--accent-color)
 }
 
 /* Оформление формы модального окна */
@@ -832,7 +837,12 @@ a{
 }
 .form-label{
     position: relative;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
 }
 .form-input{
     margin-top: 4px;
@@ -866,11 +876,22 @@ a{
     fill: var(--accent-color);
 }
 
+.form-label-comment{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+   /* identical to box height */
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
 
+}
 
 textarea{
     padding: 12px 16px;
     resize: none;
+    height: 120px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
@@ -983,6 +1004,7 @@ textarea{
 .footer-input:hover,
 .footer-input:focus{
     border: 1px solid var(--accent-color);
+    outline: none;
     cursor: pointer;
 }
 
